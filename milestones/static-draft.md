@@ -1,6 +1,6 @@
 # {Project Name}
 
-{Your Name}
+Chema Galvez
 
 ## What is your current goal? Has it changed since the proposal?
 
