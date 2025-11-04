@@ -13,6 +13,7 @@ dependencies = [
     "pandas>=2.3.3",
     "polars>=1.34.0",
     "pyarrow>=22.0.0",
+    "ruff>=0.14.3",
     "selenium>=4.37.0",
     "vega-datasets>=0.9.0",
     "vl-convert-python>=1.8.0",
