@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Made in China</title>
+    <title>Made in China: Installed Everywhere</title>
     <style>
 /* Base layout */
 
@@ -326,10 +326,12 @@ p {
         </div>
     </div>
     </div> 
-    </div>
-        <div class="viz-container">
+        <div class="image-image">
+            <div class="viz-container">
             <iframe src="../src/article-images/scatter_invest_regions.html" scrolling="no"></iframe>
         </div>
+        </div>
+        
         <p class="image-caption">
         Source: <a href="https://www.wri.org/research/china-overseas-finance-inventory-database" target="_blank">WRI — China Overseas Finance Inventory Database</a>
         </p>
@@ -356,7 +358,7 @@ p {
         Source: <a href="https://www.wri.org/research/china-overseas-finance-inventory-database" target="_blank">WRI — China Overseas Finance Inventory Database</a>
     </p>
 
-    <h2>Sources</h2>
+    <h2 class="entry-title" itemprop="headline">Sources</h2>
     <ol class="sources">
     <li><a href="https://www.woodmac.com/press-releases/global-solar-ranking/" target="_blank">Top ten solar PV module 
         manufacturers show resilience in H1 2024 despite facing significant headwinds (Wood Mackenzie)</a></li>
@@ -378,23 +380,6 @@ p {
 
     </ol>
 </main>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const main = document.querySelector("main");
-  const children = Array.from(main.children);
-  let section = null;
-
-  children.forEach((el) => {
-    if (el.tagName === "H2") {
-      section = document.createElement("div");
-      section.classList.add("section");
-      main.insertBefore(section, el);
-    }
-    if (section) section.appendChild(el);
-  });
-});
-</script>
 
 </body>
 </html>
