@@ -84,6 +84,13 @@ p {
   margin-bottom: 1.7rem;
 }
 
+.viz-container iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  overflow: hidden;
+}
+
 /* Responsive stacking */
 @media (max-width: 760px) {
   .m-block--text.s-intersected > .m-block__content {
@@ -150,14 +157,15 @@ p {
     </div>
 
     <div class="kpi-grid">
-  <iframe src="article-images/China.svg"></iframe>
-  <iframe src="article-images/Vietnam.svg"></iframe>
-  <iframe src="article-images/India.svg"></iframe>
-  <iframe src="article-images/Thailand.svg"></iframe>
-  <iframe src="article-images/United States.svg"></iframe>
-  <iframe src="article-images/Malaysia.svg"></iframe>
-  <iframe src="article-images/Others.svg"></iframe>
-</div>
+        <img src="article-images/China.svg" alt="China KPI">
+        <img src="article-images/Vietnam.svg" alt="Vietnam KPI">
+        <img src="article-images/India.svg" alt="India KPI">
+        <img src="article-images/Thailand.svg" alt="Thailand KPI">
+        <img src="article-images/United States.svg" alt="United States KPI">
+        <img src="article-images/Malaysia.svg" alt="Malaysia KPI">
+        <img src="article-images/Others.svg" alt="Others KPI">
+    </div>
+
 
 <div class="image-caption">
   Photovoltaic module manufacturing market share (2023). Source: Statista.
@@ -192,14 +200,14 @@ in solar farms
 <p>Since 2022 the General Administration of Customs of the People's Republic of China (GACC) and the Ministry 
 of Industry and Information Technology (MIIT) started reporting panel and cell exports separately cell and
 wafers exports have been wining traction and now summed both they make up more than 40% of China's solar
-technology exports
+technology exports SOURCE: https://ember-energy.org/data/china-solar-exports-data/
 </p>
 
 <div class="image-image">
-    <img alt="Monthly exports" src="article-images/exports_by_tech.png">
+    <img alt="Monthly exports" src="article-images/china_world_exports_area.svg">
 </div>
 <div class="image-image">
-    <img alt="Monthly exports" src="article-images/exports_by_region_plus_world.png">
+    <img alt="Monthly exports" src="article-images/exports_by_region_line.svg">
 </div>
 
 <h2 class="entry-title" itemprop="headline">Two types of importers</h2>
@@ -228,7 +236,7 @@ technology exports
 </div>
 
 <div class="image-image">
-    <img alt="Monthly exports top 10 country" src="article-images/bar.svg">
+    <img alt="Monthly exports top 10 country" src="article-images/bar_topimporters.svg">
 </div>
 
 <h2 class="entry-title" itemprop="headline">When China doesn't imports, it invests</h2>
@@ -243,18 +251,22 @@ technology exports
                         - Energy transition is accelerating fast (UAE, Chile)
                         - Local capital markets are tight (Argentina)
                         - Grid expansion plans depend on foreign financing (Italy)
+                        (https://datasets.wri.org/datasets/cofi)
                     </p>
         </div>
     </div>
 </div>
+    <div class="viz-container">
+        <iframe src="article-images/scatter_invest_regions.html" scrolling="no"></iframe>
+    </div>
 
 <div class="image-image">
-    <img alt="Monthly exports top 10 country" src="article-images/visualization.svg">
+    <img alt="Top 15 COFI" src="article-images/china_investments_lollipop.svg">
 </div>
+
 
 </main>
 
-<!-- ✅ Add this script BEFORE closing body -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const main = document.querySelector("main");

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "title": {"anchor": "middle", "font": "Helvetica", "fontSize": 15}}, "data": {"name": "data-ed0163bb206af42b1e01bcb1f77329b8"}, "mark": {"type": "circle", "size": 300}, "encoding": {"color": {"field": "region", "legend": {"title": "Region"}, "scale": {"domain": ["Africa", "Asia", "Europe", "Americas"], "range": ["#B55A2A", "#E8B200", "#006796", "#FF8F00"]}, "type": "nominal"}, "tooltip": [{"field": "region", "title": "Region", "type": "nominal"}, {"field": "total_investment_musd", "format": ",", "title": "Total Investment (M USD)", "type": "quantitative"}, {"field": "total_capacity_mw", "format": ",", "title": "Installed Capacity (MW)", "type": "quantitative"}], "x": {"field": "total_investment_musd", "title": "Total Investment (M USD)", "type": "quantitative"}, "y": {"field": "total_capacity_mw", "title": "Installed Capacity (MW)", "type": "quantitative"}}, "height": 450, "title": "Which Regions Receive the Most Chinese Solar Investment and Capacity?", "width": 650, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-ed0163bb206af42b1e01bcb1f77329b8": [{"region": "Asia", "total_investment_musd": 1847.3055780478612, "total_capacity_mw": 5843.460000000001}, {"region": "Americas", "total_investment_musd": 1648.5, "total_capacity_mw": 712.8}, {"region": "Europe", "total_investment_musd": 1038.833300330033, "total_capacity_mw": 739.5799999999999}, {"region": "Africa", "total_investment_musd": 773.1316654786365, "total_capacity_mw": 987.686}]}};
+      var embedOpt = {"actions": false, "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
