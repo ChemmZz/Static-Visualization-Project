@@ -4,15 +4,24 @@ José María (Chema Gálvez)
 
 ## Description
 
-{a short description of your project and its goals}
+China produces the vast majority of the world’s solar technology. I try to show how that technology moves across borders, where it is shipped, and where China is directly building solar infrastructure abroad,revealing the scale and reach of China’s solar energy influence in the globe.
 
-![screenshot1]("static-viz/screenshots/Screenshot1.png")
-![screenshot2]("static-viz/screenshots/Screenshot2.png")
-![screenshot3]("static-viz/screenshots/Screenshot3.png")
-![screenshot4]("static-viz/screenshots/Screenshot4.png")
-![screenshot5]("static-viz/screenshots/Screenshot5.png")
-![screenshot6]("static-viz/screenshots/Screenshot6.png")
-![screenshot7]("static-viz/screenshots/Screenshot7.png")
+
+
+### Screenshots of the whole html page:
+![Screenshot1](static-viz/screenshots/Screenshot1.png)
+
+![screenshot2](static-viz/screenshots/Screenshot2.png)
+
+![screenshot3](static-viz/screenshots/Screenshot3.png)
+
+![screenshot4](static-viz/screenshots/Screenshot4.png)
+
+![screenshot5](static-viz/screenshots/Screenshot5.png)
+
+![screenshot6](static-viz/screenshots/Screenshot6.png)
+
+![screenshot7](static-viz/screenshots/Screenshot7.png)
 
 ## Data Sources
 
