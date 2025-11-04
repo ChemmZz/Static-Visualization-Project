@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made in China</title>
+    <style>
+/* Base layout */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header, main {
+  max-width: 950px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+main {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem 2.2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Two-column layout for h3 + text blocks */
+.m-block--text.s-intersected > .m-block__content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 1.8rem;
+  align-items: start;
+  margin: 2rem 0;
+}
+
+.m-block__title.f-title-5 {
+  grid-column: 1;
+  align-self: center;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #111;
+}
+
+.m-block__content.f-rte.f-rte--block {
+  grid-column: 2;
+  margin: 0;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.65;
+}
+
+/* Images */
+.image-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -0.5rem;
+  margin-bottom: 1.7rem;
+}
+
+.viz-container iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  overflow: hidden;
+}
+
+/* Responsive stacking */
+@media (max-width: 760px) {
+  .m-block--text.s-intersected > .m-block__content {
+    grid-template-columns: 1fr;
+    row-gap: 0.6rem;
+  }
+  .m-block__title,
+  .m-block__content.f-rte.f-rte--block {
+    grid-column: 1;
+  }
+}
+
+/* --- Alternating section backgrounds --- */
+.section {
+  padding: 2rem 1.2rem;
+  border-radius: 6px;
+}
+
+.section:nth-of-type(odd) {
+  background: #ffffff;
+}
+
+.section:nth-of-type(even) {
+  background: var(--section-gray);
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin: 2rem 0;
+}
+
+.kpi-grid iframe {
+  border: none;
+  width: 180px;
+  height: 180px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="entry-title" itemprop="headline">Made in China: Installed everywhere</h1>
+</header>
+
+<main>
+
+    <div class="m-block m-block--text s-intersected">
+    <div class="m-block__content">
+        <h3 class="m-block__title f-title-5"> 
+            China is the central node in the global energy transition
+        </h3>
+
+        <div class="m-block__content f-rte f-rte--block">
+            <p> China is a solar titan, it supplies the majority of the world's solar manufacturing
+            inputs and finished modules they <strong>manufacture over 80% of all the solar panels stages and hosts 9 of the Top 10 
+            PV manufacturers</strong><sup>[1]</sup>.
+        </div>
+    </div>
+
+    <div class="kpi-grid">
+        <img src="../src/article-images/China.svg" alt="China KPI">
+        <img src="../src/article-images/Vietnam.svg" alt="Vietnam KPI">
+        <img src="../src/article-images/India.svg" alt="India KPI">
+        <img src="../src/article-images/Thailand.svg" alt="Thailand KPI">
+        <img src="../src/article-images/United States.svg" alt="United States KPI">
+        <img src="../src/article-images/Malaysia.svg" alt="Malaysia KPI">
+        <img src="../src/article-images/Others.svg" alt="Others KPI">
+    </div>
+
+
+    <div class="image-caption">
+        Photovoltaic module manufacturing market share (2023). Source: Statista.
+    </div>
+
+
+    <p> When talking about renewables it's important to understand that countries are not buying an energy source, 
+    unlike oil that will run out in a relatively small time, once you buy a solar panel it's good for the next
+    25-35 years, a country is buying not a energy source, rather it's buying a technology that empowers it and makes it less dependent on others, 
+    less exposed to global conflicts, i.e. makes energy sovereignty a possiblity, descentrilization. A such, solar beign a technology not a fuel it can power
+    whatever the country needs, lights, factories, heaters, farms. And as Gabriel Davies has explained<sup>[2]</sup>,
+    solar practicallt achieves the same efficiency in small as in giant solar farms, meaning small-scale local solar can compite with the more traditional
+    centralized lare-scale power generation  </p>
+    </div>
+
+    <p>Thus as China's solar technology exports continue to grow, it's important to understand where are they going
+        and how the countries importing them are using the technology, is it to become less reliable in other conuntries,
+        to achieve internal carbon footprint policies or maybe to compete against China. In this post I will deep dive
+        into where the money from solar is going, what are the big importers doing with it and where is China directly investing
+        in solar farms
+    </p>
+
+    <h2 class="entry-title" itemprop="headline">Inside the supply chain</h2>
+
+    <div class="image-image">
+        <img alt="Solar Pv" src="../src/article-images/SolarPV.png">
+    </div>
+    <div class="image-caption">
+        Key stages in the main manufacturing process for solar PV. Source: International Energy Agency https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary
+    </div>
+
+    <p>Since 2022 the General Administration of Customs of the People's Republic of China (GACC) and the Ministry 
+        of Industry and Information Technology (MIIT) started reporting panel and cell exports separately cell and
+        wafers exports have been wining traction and now summed both they make up more than 40% of China's solar
+        technology exports
+    </p>
+
+    <div class="image-image">
+        <img alt="Monthly exports" src="../src/article-images/china_world_exports_area.svg">
+    </div>
+    <p class="image-caption">
+        Source: <a href="https://ember-energy.org/data/china-solar-exports-data/" target="_blank">Ember — China’s Solar PV Exports</a>
+    </p>
+
+    <div class="image-image">
+        <img alt="Monthly exports by region" src="../src/article-images/exports_by_region_line.svg">
+    </div>
+    <p class="image-caption">
+        Source: <a href="https://ember-energy.org/data/china-solar-exports-data/" target="_blank">Ember — China’s Solar PV Exports</a>
+    </p>
+
+    <h2 class="entry-title" itemprop="headline">Two types of importers</h2>
+
+    <div class="m-block m-block--text s-intersected">
+        <div class="m-block__content">
+            <h3 class="m-block__title f-title-5"> 
+                Some countries rely on China to power solar deployment, while others
+                rely on China to power their own manufacturing capabillity
+            </h3>
+            <div class="m-block__content f-rte f-rte--block">
+                <p>Depending on the partner China enables both deployment and industrial capability.
+                            From the Top 5 importers of Chinese energy technology, 3 (India, Vietnam, Thailand) are direct 
+                            competitors in the manufacturing scene and consistenly trying to win more market capitalzation
+                            over China<sup>[3]</sup> while other countries in the Top 5 like the Netherlands or Brazil 
+                            theses imports come from domestic demand booming<sup>[4]</sup><sup>[5]</sup>.
+                        </p>
+                        <p>
+                            We can see this clearly in the graph by looking at those countries that only import panels vs those
+                            who are importing the intermediate techonologies. All of these are South East Asian, marking a trend
+                            on what could be the future of the technology and economics of the region.
+                        </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-image">
+        <img alt="Monthly exports top 10 country" src="../src/article-images/bar_topimporters.svg">
+    </div>
+    <p class="image-caption">
+        Source: <a href="https://ember-energy.org/data/china-solar-exports-data/" target="_blank">Ember — China’s Solar PV Exports</a>
+    </p>
+
+    <h2 class="entry-title" itemprop="headline">When China doesn't imports, it invests</h2>
+
+    <div class="m-block m-block--text s-intersected">
+        <div class="m-block__content">
+            <h3 class="m-block__title f-title-5"> 
+                China is also creating its own market
+            </h3>
+            <div class="m-block__content f-rte f-rte--block">
+                <p>Unlike raw exports, China's direct investments tends to target countries. where:
+                            - Energy transition is accelerating fast (UAE, Chile)
+                            - Local capital markets are tight (Argentina)
+                            - Grid expansion plans depend on foreign financing (Italy)
+                        </p>
+            </div>
+        </div>
+    </div>
+        <div class="viz-container">
+            <iframe src="../src/article-images/scatter_invest_regions.html" scrolling="no"></iframe>
+        </div>
+        <p class="image-caption">
+        Source: <a href="https://www.wri.org/research/china-overseas-finance-inventory-database" target="_blank">WRI — China Overseas Finance Inventory Database</a>
+        </p>
+
+    <div class="image-image">
+        <img alt="Top 15 COFI" src="../src/article-images/china_investments_lollipop.svg">
+    </div>
+    <p class="image-caption">
+        Source: <a href="https://www.wri.org/research/china-overseas-finance-inventory-database" target="_blank">WRI — China Overseas Finance Inventory Database</a>
+    </p>
+
+    <h2>Sources</h2>
+    <ol class="sources">
+    <li><a href="https://www.woodmac.com/press-releases/global-solar-ranking/" target="_blank">Top ten solar PV module manufacturers show resilience in H1 2024 despite facing significant headwinds (Wood Mackenzie)</a></li>
+    <li><a href="https://energyaccess.duke.edu/the-secret-of-the-energy-transition-why-solar-will-reshape-global-politics-and-be-bad-for-putin/" target="_blank">The secret of the energy transition: why solar will reshape global politics (and be bad for Putin) - James E. Rogers Energy Access Project (Duke)</a></li>
+    <li><a href="https://www.bloomberg.com/news/articles/2025-02-25/india-mulls-1-billion-subsidy-plan-to-boost-solar-manufacturing" target="_blank">India Mulls $1 Billion Subsidy Plan to Boost Solar Manufacturing (Bloomberg)</a></li>
+    <li><a href="https://apnews.com/article/brazil-wind-solar-power-electricity-renewable-energy-13eef596389803e8b801f26e7888fb97" target="_blank">Wind and solar power fuel over one-third of Brazil's electricity for first time (AP News)</a></li>
+    <li><a href="https://www.reuters.com/markets/commodities/netherlands-shines-key-european-energy-transition-driver-2024-03-05/" target="_blank">The Netherlands shines as key European energy transition driver (Reuters)</a></li>
+    </ol>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const main = document.querySelector("main");
+  const children = Array.from(main.children);
+  let section = null;
+
+  children.forEach((el) => {
+    if (el.tagName === "H2") {
+      section = document.createElement("div");
+      section.classList.add("section");
+      main.insertBefore(section, el);
+    }
+    if (section) section.appendChild(el);
+  });
+});
+</script>
+
+</body>
+</html>
