@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
+<!-- CSS and HTML were code was created usign IEA's website as template
+ https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary
+ 
+ And then making tweaks manually and asking ChatGPT fixes like 
+ "How to create a line above the h2 to subtitles are clear?"-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Made in China</title>
     <style>
 /* Base layout */
+
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
@@ -26,6 +32,21 @@ header h1 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2rem;
+}
+.entry-title {
+  position: relative;
+  padding-top: 1.8rem;
+}
+
+.entry-title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #bbb;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 main {
@@ -150,11 +171,17 @@ p {
         </h3>
 
         <div class="m-block__content f-rte f-rte--block">
-            <p> China is a solar titan, it supplies the majority of the world's solar manufacturing
-            inputs and finished modules they <strong>manufacture over 80% of all the solar panels stages and hosts 9 of the Top 10 
-            PV manufacturers</strong><sup>[1]</sup>.
+            <p> China is the dominant actor in the global solar industry. It supplies the majority 
+                of the world’s photovoltaic manufacturing inputs and finished modules, and 
+                <strong>accounts for more than 80% of production across all major stages of the solar supply chain, 
+                while hosting 9 of the 10 largest PV manufacturers</strong><sup>[1]</sup>.
         </div>
     </div>
+
+    <p class="image-caption" style="text-align:center; margin-top: -1rem; margin-bottom: 1.5rem; font-size: 1rem; color:#444;">
+        <strong>Distribution of Global Solar PV Module Production by Country, 2023</strong>
+    </p>
+
 
     <div class="kpi-grid">
         <img src="../src/article-images/China.svg" alt="China KPI">
@@ -166,27 +193,33 @@ p {
         <img src="../src/article-images/Others.svg" alt="Others KPI">
     </div>
 
-
-    <div class="image-caption">
-        Photovoltaic module manufacturing market share (2023). Source: Statista.
-    </div>
-
-
-    <p> When talking about renewables it's important to understand that countries are not buying an energy source, 
-    unlike oil that will run out in a relatively small time, once you buy a solar panel it's good for the next
-    25-35 years, a country is buying not a energy source, rather it's buying a technology that empowers it and makes it less dependent on others, 
-    less exposed to global conflicts, i.e. makes energy sovereignty a possiblity, descentrilization. A such, solar beign a technology not a fuel it can power
-    whatever the country needs, lights, factories, heaters, farms. And as Gabriel Davies has explained<sup>[2]</sup>,
-    solar practicallt achieves the same efficiency in small as in giant solar farms, meaning small-scale local solar can compite with the more traditional
-    centralized lare-scale power generation  </p>
-    </div>
-
-    <p>Thus as China's solar technology exports continue to grow, it's important to understand where are they going
-        and how the countries importing them are using the technology, is it to become less reliable in other conuntries,
-        to achieve internal carbon footprint policies or maybe to compete against China. In this post I will deep dive
-        into where the money from solar is going, what are the big importers doing with it and where is China directly investing
-        in solar farms
+    <p class="image-caption">
+        Source: <a href="https://www.statista.com/statistics/668749/regional-distribution-of-solar-pv-module-manufacturing/" target="_blank">Statista - 
+            Photovoltaic module manufacturing market share (2023)</a>
     </p>
+
+
+    <p>
+    In the context of renewables, it is important to distinguish between <strong>purchasing a fuel</strong> and 
+    <strong>acquiring a technology.</strong> Fossil energy must be continually extracted and imported, making states 
+    structurally dependent on external suppliers. Solar modules, by contrast, generate electricity for 25–35 years once 
+    installed, with no need for ongoing supply. Countries adopting solar are therefore not simply meeting 
+    current energy demand, they are making a <strong>long-term investment in productive capacity</strong> that reduces 
+    exposure to price volatility, geopolitical risk, and external supply disruptions. As Gabriel Davies notes<sup>[2]</sup>, 
+    the efficiency of photovoltaic systems is largely scale-invariant, meaning <strong>distributed local installations 
+    can perform competitively</strong> relative to large centralized power plants.
+    </p>
+
+    <p>
+    As China's solar exports expand, the strategic implications vary across importing states. Some countries use 
+    Chinese modules to pursue <strong>energy sovereignty and decarbonization goals</strong>, while others import 
+    <strong>intermediate components</strong> to build domestic manufacturing capacity and compete upstream in the value chain. 
+    Understanding these differences is critical for interpreting both trade patterns and China’s parallel role as an overseas investor. 
+    This analysis examines where Chinese solar technology is being deployed, how major importers are positioning 
+    themselves within the global photovoltaic supply network, and in which markets China is choosing to <strong>invest 
+    directly in solar infrastructure</strong>.
+    </p>
+
 
     <h2 class="entry-title" itemprop="headline">Inside the supply chain</h2>
 
@@ -194,14 +227,23 @@ p {
         <img alt="Solar Pv" src="../src/article-images/SolarPV.png">
     </div>
     <div class="image-caption">
-        Key stages in the main manufacturing process for solar PV. Source: International Energy Agency https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary
+        
     </div>
-
-    <p>Since 2022 the General Administration of Customs of the People's Republic of China (GACC) and the Ministry 
-        of Industry and Information Technology (MIIT) started reporting panel and cell exports separately cell and
-        wafers exports have been wining traction and now summed both they make up more than 40% of China's solar
-        technology exports
+    <p class="image-caption">
+        Source: <a href="https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary" target="_blank">IEA - 
+            Key stages in the main manufacturing process for solar PV.</a>
     </p>
+
+    <p>
+    Since 2022, the General Administration of Customs of the People's Republic of China (GACC) 
+    and the Ministry of Industry and Information Technology (MIIT) have begun reporting exports of 
+    panels, cells, and wafers separately. This change provides clearer visibility into the structure of 
+    China’s solar technology exports. Notably, <strong>exports of cells and wafers have grown rapidly</strong>, 
+    and together now account for <strong>more than 40% of China’s total solar technology export value</strong>. 
+    This indicates that China is not only supplying the world with finished panels, but also with 
+    the <strong>intermediate components that underpin manufacturing capacity elsewhere</strong>.
+    </p>
+
 
     <div class="image-image">
         <img alt="Monthly exports" src="../src/article-images/china_world_exports_area.svg">
@@ -226,18 +268,23 @@ p {
                 rely on China to power their own manufacturing capabillity
             </h3>
             <div class="m-block__content f-rte f-rte--block">
-                <p>Depending on the partner China enables both deployment and industrial capability.
-                            From the Top 5 importers of Chinese energy technology, 3 (India, Vietnam, Thailand) are direct 
-                            competitors in the manufacturing scene and consistenly trying to win more market capitalzation
-                            over China<sup>[3]</sup> while other countries in the Top 5 like the Netherlands or Brazil 
-                            theses imports come from domestic demand booming<sup>[4]</sup><sup>[5]</sup>.
-                        </p>
-                        <p>
-                            We can see this clearly in the graph by looking at those countries that only import panels vs those
-                            who are importing the intermediate techonologies. All of these are South East Asian, marking a trend
-                            on what could be the future of the technology and economics of the region.
-                        </p>
+                <p>
+                    China’s export relationships play two distinct roles. Among the top importers of Chinese solar technology, 
+                    <strong>India, Vietnam, and Thailand</strong> use imported <em>wafers and cells</em> to expand their own 
+                    manufacturing capacity. These countries are <strong>direct competitors</strong> in the global PV value chain, 
+                    each pursuing industrial strategies aimed at capturing a greater share of upstream production<sup>[3]</sup>. 
+                    In contrast, countries such as the <strong>Netherlands</strong> and <strong>Brazil</strong> primarily import 
+                    <em>finished modules</em> to meet rapidly growing domestic deployment demand<sup>[4][5]</sup>.
+                </p>
+
+                <p>
+                    The distinction becomes visible in the data: countries importing mainly <strong>panels</strong> are focused on 
+                    accelerating installation, while those importing <strong>cells and wafers</strong> are building or defending 
+                    domestic production capacity. This pattern is particularly pronounced in Southeast Asia, where rising 
+                    manufacturing investment signals a potential reconfiguration of the regional solar technology landscape.
+                </p>
             </div>
+
         </div>
     </div>
 
@@ -256,13 +303,29 @@ p {
                 China is also creating its own market
             </h3>
             <div class="m-block__content f-rte f-rte--block">
-                <p>Unlike raw exports, China's direct investments tends to target countries. where:
-                            - Energy transition is accelerating fast (UAE, Chile)
-                            - Local capital markets are tight (Argentina)
-                            - Grid expansion plans depend on foreign financing (Italy)
-                        </p>
+                <p>
+            Although Asia appears as one of the main destinations for Chinese solar investment at the regional level, 
+            a country-level breakdown shows a more concentrated and strategic pattern. The majority of Asia’s investment 
+            allocation is directed to the <strong>United Arab Emirates</strong> rather than to the broader ASEAN region<sup>[6]</sup>. 
+            Political instability in several Southeast Asian states and historically weak enforcement institutions 
+            have raised risks of <strong>project delays, contract insecurity, and security exposure</strong> for 
+            foreign firms<sup>[7]</sup>. China has previously encountered such risks when infrastructure and 
+            resource investments in the region became vulnerable to governance volatility and localized conflict dynamics.
+            </p>
+
+            <p>
+            In the case of <strong>India</strong>, the limiting factor is not instability but <strong>strategic industrial 
+            competition</strong>. India is one of the world’s fastest-expanding solar producers and has 
+            introduced <strong>large-scale subsidy and tariff programs to displace Chinese inputs</strong> and grow its 
+            domestic manufacturing base<sup>[3]</sup>. The relationship is therefore competitive, not complementary: 
+            India imports intermediate components but does not represent a low-risk environment for <strong>equity-based 
+            Chinese capital deployment</strong>.
+            </p>
+
             </div>
         </div>
+    </div>
+    </div> 
     </div>
         <div class="viz-container">
             <iframe src="../src/article-images/scatter_invest_regions.html" scrolling="no"></iframe>
@@ -270,7 +333,22 @@ p {
         <p class="image-caption">
         Source: <a href="https://www.wri.org/research/china-overseas-finance-inventory-database" target="_blank">WRI — China Overseas Finance Inventory Database</a>
         </p>
-
+         <p></p><p></p>
+        <div class="m-block__content f-rte f-rte--block">
+                <p>
+                    By contrast, Chinese solar investment tends to favor markets where <strong>policy stability aligns with 
+                    long-term infrastructure finance</strong> and where <strong>energy transition commitments are
+                    institutionally backed</strong>. This is why <strong>the UAE accounts for most of Asia’s 
+                    total</strong>; in Europe, <strong>Italy stands out</strong> due to grid-expansion financing 
+                    frameworks; and in the Americas, <strong>Chile and Argentina emerge as major destinations</strong> 
+                    due to fast-moving renewable integration and capital constraints in local markets<sup>[8]</sup>. 
+                    The resulting investment geography reflects not regional preference, but a calculated approach 
+                    to <strong>minimizing political and security risk</strong> while maximizing <strong>deployment 
+                        stability and return predictability</strong>.
+                </p>
+            </div>
+    </div>
+    <p></p><p></p>
     <div class="image-image">
         <img alt="Top 15 COFI" src="../src/article-images/china_investments_lollipop.svg">
     </div>
@@ -280,11 +358,24 @@ p {
 
     <h2>Sources</h2>
     <ol class="sources">
-    <li><a href="https://www.woodmac.com/press-releases/global-solar-ranking/" target="_blank">Top ten solar PV module manufacturers show resilience in H1 2024 despite facing significant headwinds (Wood Mackenzie)</a></li>
-    <li><a href="https://energyaccess.duke.edu/the-secret-of-the-energy-transition-why-solar-will-reshape-global-politics-and-be-bad-for-putin/" target="_blank">The secret of the energy transition: why solar will reshape global politics (and be bad for Putin) - James E. Rogers Energy Access Project (Duke)</a></li>
-    <li><a href="https://www.bloomberg.com/news/articles/2025-02-25/india-mulls-1-billion-subsidy-plan-to-boost-solar-manufacturing" target="_blank">India Mulls $1 Billion Subsidy Plan to Boost Solar Manufacturing (Bloomberg)</a></li>
-    <li><a href="https://apnews.com/article/brazil-wind-solar-power-electricity-renewable-energy-13eef596389803e8b801f26e7888fb97" target="_blank">Wind and solar power fuel over one-third of Brazil's electricity for first time (AP News)</a></li>
-    <li><a href="https://www.reuters.com/markets/commodities/netherlands-shines-key-european-energy-transition-driver-2024-03-05/" target="_blank">The Netherlands shines as key European energy transition driver (Reuters)</a></li>
+    <li><a href="https://www.woodmac.com/press-releases/global-solar-ranking/" target="_blank">Top ten solar PV module 
+        manufacturers show resilience in H1 2024 despite facing significant headwinds (Wood Mackenzie)</a></li>
+    <li><a href="https://energyaccess.duke.edu/the-secret-of-the-energy-transition-why-solar-will-reshape-global-politics-and-be-bad-for-putin/" 
+        target="_blank">The secret of the energy transition: why solar will reshape global politics (and be bad for Putin) - J
+        ames E. Rogers Energy Access Project (Duke)</a></li>
+    <li><a href="https://www.bloomberg.com/news/articles/2025-02-25/india-mulls-1-billion-subsidy-plan-to-boost-solar-manufacturing" 
+        target="_blank">India Mulls $1 Billion Subsidy Plan to Boost Solar Manufacturing (Bloomberg)</a></li>
+    <li><a href="https://apnews.com/article/brazil-wind-solar-power-electricity-renewable-energy-13eef596389803e8b801f26e7888fb97" 
+        target="_blank">Wind and solar power fuel over one-third of Brazil's electricity for first time (AP News)</a></li>
+    <li><a href="https://www.reuters.com/markets/commodities/netherlands-shines-key-european-energy-transition-driver-2024-03-05/" 
+        target="_blank">The Netherlands shines as key European energy transition driver (Reuters)</a></li>
+    <li><a href="https://www.wri.org/research/china-overseas-finance-inventory-database" 
+        target="_blank">China Overseas Finance Inventory Database (WRI)</a></li>
+    <li><a href="https://asiafoundation.org/asia-and-the-pacific-in-2024-elections-economics-and-geopolitics/" 
+        target="_blank">Asia and the Pacific in 2024: Elections, Economics, and Geopolitics (The Asia Foundation)</a></li>
+    <li><a href="https://www.iea.org/reports/world-energy-investment-2024" 
+        target="_blank">World Energy Investment 2024 (IEA)</a></li>
+
     </ol>
 </main>
 
